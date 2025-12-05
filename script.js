@@ -1,22 +1,22 @@
 const resources = [{
     name: "York County Food Bank",
-    category: "food",
+    category: "Food",
     description: "DESCRIPCION DEL RECURSO",
 },{
     name: "PA 211",
-    category: "education",
+    category: "Education",
     description: "DESCRIPCION DEL RECURSO",
 },{
     name: "York JCC Family Services",
-    category: "health",
+    category: "Health",
     description: "DESCRIPCION DEL RECURSO",
 },{
     name: "Healthy Community Network",
-    category: "health",
+    category: "Health",
     description: "DESCRIPCION DEL RECURSO",
 },{
     name: "Access York, Inc.",
-    category: "health",
+    category: "Health",
     description: "DESCRIPCION DEL RECURSO",
 }];
 
