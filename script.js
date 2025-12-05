@@ -27,7 +27,7 @@ function displayResources(resources) {
     for (let i = 0; i < resources.length; i++) {
         const r = resources[i];
         resourceList.innerHTML += `
-            <div class="resource-card-">
+            <div class="resource-card">
                 <h3>${i + 1}. ${r.name}</h3>
                 <p>Category: ${r.category}</p>
                 <p>${r.description}</p>
