@@ -11,3 +11,7 @@ const resources = [{
     category: "health",
     description: "DESCRIPCION DEL RECURSO",
 }];
+
+    
+const resourceList = document.getElementById('resourceList');
+resourceList.innerHTML = resources;
