@@ -28,6 +28,7 @@ function displayResources(resources) {
         const r = resources[i];
         resourceList.innerHTML += `
             <div class="resource-card">
+                <div class="group">
                 <h3>${i + 1}. ${r.name}</h3>
                 <p>Category: ${r.category}</p>
                 <p>${r.description}</p>
