@@ -81,9 +81,9 @@ ul li a:hover {
     }
 
     .navbar {
-        margin: 10px;
+        margin: 15px;
         flex-direction: column;
-        padding: 15px;
+        padding: 10px;
     }
 
     h2 {
