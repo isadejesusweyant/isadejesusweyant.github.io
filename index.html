@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <title>Home page</title>
-        <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible"
-            content="IE=edge"/>
-            <meta name="viewport"
-            content="width=device-width, initial-scale=1"/>
+<head>
 
-        <!--link the webpage's stylesheet-->
-        <link rel="stylesheet" href="style.css"/>
+    <title>Home page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!--link the webpage's JavaScript file-->
-        <script src="script.js" defer></script>
+    <!--link the webpage's stylesheet-->
+    <link rel="stylesheet" href="style.css" />
 
-        <link href="https://fonts.cdnfonts.com/css/cairo-play" rel="stylesheet">
-    
-    </head>
+    <!--link the webpage's JavaScript file-->
+    <script src="script.js" defer></script>
 
-    <body>
+    <link href="https://fonts.cdnfonts.com/css/cairo-play" rel="stylesheet">
 
-        <nav class="navbar">
+</head>
 
-            <div class="websiteName">
-                York City Community Hub
-            </div>
+<body>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="highlights.html">Highlights</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="user suggestions.html">User suggestions</a></li>
-            </ul>
-        
-        </nav>
+    <nav class="navbar">
 
-        <section>
-            <h2>Search Resources</h2>
-            <input type="text" id="searchInput" placeholder="Search for resources..."/>
-            <select id="categorySelect">
+        <div class="websiteName">
+            York City Community Hub
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="user suggestions.html">User suggestions</a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+        <h2>Search Resources</h2>
+        <input type="text" id="searchInput" placeholder="Search for resources..." />
+        <select id="categorySelect">
             <option value="All">All Categories</option>
             <option value="Food">Food</option>
-            <option value="Education">Education</option>
             <option value="Health">Health</option>
-            </select>
-        </section>
-        
-        <section>
-            <h2>Resource Listings</h2>
-            <div id="resourceList">
-            </div>
-        </section>
+            <option value="Education">Education</option>
+            <option value="Housing">Housing</option>
+            <option value="Mental Health">Mental Health</option>
+            <option value="Employment">Employment</option>
+        </select>
+    </section>
 
-    </body>
+    <section>
+        <h2>Resource Listings</h2>
+        <div id="resourceList">
+        </div>
+    </section>
+
+</body>
 
 </html>
