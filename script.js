@@ -139,8 +139,8 @@ function displayResources(resources) {
                 <div class="group">
                 <h3>${i + 1}. ${r.name}</h3>
                 <p>Category: ${r.category}</p>
-                <p>Address: ${r.address}</p>
                 <p>${r.description}</p>
+                <p>Address: ${r.address}</p>
             </div>
         `;
     }
