@@ -1,44 +1,132 @@
-const resources = [{
-    name: "York County Food Bank",
-    category: "Food",
-    description: "Central hub fighting hunger in York County, PA, by collecting and distributing food to over 125 partner agencies and running its own public drive-thru distributions, mobile pantry, and senior programs",
-},{
-    name: "Catholic Harvest Pantry",
-    category: "Food",
-    description: "Large, volunteer-run non-profit providing emergency food and hygiene supplies (like soap, diapers) to York County residents",
-},{
-    name: "York JCC Family Services",
-    category: "Health",
-    description: "Holistic community support, offering a food pantry, transportation for seniors, social programs, and connections to broader resources like mental health counseling, aging care, and financial aid for childcare",
-},{
-    name: "Healthy Community Network",
-    category: "Health",
-    description: "Collaborative effort by healthcare providers, social services, and community groups to improve local well-being by addressing social determinants of health like food, housing, and access to care, especially for vulnerable populations, connecting people with resources, and coordinating efforts to build healthier environments",
-},{
-    name: "Access York, Inc.",
-    category: "Health",
-    description: "A program of YWCA York that provides free, confidential support for victims of domestic violence, sexual assault, and human trafficking in York County, PA, offering a 24-hour hotline",
-},{
-    name: "New Hope Ministries",
-    category: "Food",
-    description: "Christian social service agency in Pennsylvania that helps people in poverty and crisis by meeting immediate needs (food, housing, utilities, transport) and fostering long-term stability through education, job training, and youth programs",
-},{
-    name: "Hanover Area Council of Churches",
-    category: "Food",
-    description: "Faith-based alliance of local congregations serving the Hanover, PA, community by combating hunger, homelessness, and poverty through ministries like the Provide-A-Lunch program, Changing Lives Homeless Shelter, Meals-On-Wheels and more",
-},{
-    name: "York County Council of Churches",
-    category: "Food",
-    description: "supports food assistance through the York County Food Bank, offering free, healthy food via drive-thru pantries, mobile distributions, and partners (pantries, kitchens) for those in need, focusing on basic rights and nutritious meals",
-},{
-    name: "Access York, Inc.",
-    category: "Health",
-    description: "DESCRIPTION OF THE RESOURCE",
-},{
-    name: "Access York, Inc.",
-    category: "Health",
-    description: "DESCRIPTION OF THE RESOURCE", 
-}];
+const resources = [
+    // Recursos que ya tenias revisados solo le e puesto la direccion
+    {
+        name: "York County Food Bank",
+        category: "Food",
+        description: "Central hub fighting hunger in York County, PA, by collecting and distributing food to over 125 partner agencies and running its own public drive-thru distributions, mobile pantry, and senior programs",
+        address: "254 W. Princess St., York, PA 17401"
+    },
+    {
+        name: "Catholic Harvest Pantry",
+        category: "Food",
+        description: "Large, volunteer-run non-profit providing emergency food and hygiene supplies (like soap, diapers) to York County residents",
+        address: "628 E. Market St., York, PA 17403"
+    },
+    {
+        name: "Healthy Community Network",
+        category: "Health",
+        description: "Collaborative effort by healthcare providers, social services, and community groups to improve local well-being by addressing social determinants of health like food, housing, and access to care, especially for vulnerable populations, connecting people with resources, and coordinating efforts to build healthier environments",
+        address: "116 S. George St., York, PA 17401"
+    },
+    {
+        name: "Access York, Inc.",
+        category: "Health",
+        description: "A program of YWCA York that provides free, confidential support for victims of domestic violence, sexual assault, and human trafficking in York County, PA, offering a 24-hour hotline",
+        address: "P.O. Box 30, York, PA 17405"
+    },
+    {
+        name: "York County Council of Churches",
+        category: "Food",
+        description: "supports food assistance through the York County Food Bank, offering free, healthy food via drive-thru pantries, mobile distributions, and partners (pantries, kitchens) for those in need, focusing on basic rights and nutritious meals",
+        address: "595 W. Market St., York, PA 17401"
+    },
+
+    // Recursos nuevos que agregue para completar los 20 ya con la direccion verificada
+    {
+        name: "Emanuel Church of God",
+        category: "Food",
+        description: "",
+        address: "825 E. Princess St., York, PA 17403"
+    },
+    {
+        name: "Salvation Army",
+        category: "Food",
+        description: "",
+        address: "50 E. King St., York, PA 17401"
+    },
+    {
+        name: "Family First Health",
+        category: "Health",
+        description: "",
+        address: "116 S. George St., York, PA 17401"
+    },
+    {
+        name: "WellSpan Health",
+        category: "Health",
+        description: "",
+        address: "1001 S. George St., York, PA 17403"
+    },
+    {
+        name: "York Hospital Community Health Center",
+        category: "Health",
+        description: "",
+        address: "605 S. George St., York, PA 17403"
+    },
+    {
+        name: "PA 211",
+        category: "Education",
+        description: "",
+        address: "Statewide service - Available 24/7"
+    },
+    {
+        name: "Lincoln Intermediate Unit No. 12 (LIU 12)",
+        category: "Education",
+        description: "",
+        address: "300 E. 7th Ave., York, PA 17404"
+    },
+    {
+        name: "York County Literacy Council",
+        category: "Education",
+        description: "",
+        address: "800 E. King St., York, PA 17403"
+    },
+    {
+        name: "York Habitat for Humanity",
+        category: "Housing",
+        description: "",
+        address: "33 S. Steward St., York, PA 17404"
+    },
+    {
+        name: "YWCA York (Emergency Shelter)",
+        category: "Housing",
+        description: "",
+        address: "320 E. Market St., York, PA 17403"
+    },
+    {
+        name: "Bell Bridge Housing Program",
+        category: "Housing",
+        description: "",
+        address: "852 E. Market St., York, PA 17403"
+    },
+    {
+        name: "TrueNorth Wellness Services",
+        category: "Mental Health",
+        description: "",
+        address: "1195 Roosevelt Ave., York, PA 17404"
+    },
+    {
+        name: "Crisis Intervention - York Hospital",
+        category: "Mental Health",
+        description: "",
+        address: "1001 S. George St., York, PA 17403"
+    },
+    {
+        name: "PA Career Link",
+        category: "Employment",
+        description: "",
+        address: "841 Vogelsong Rd., York, PA 17404"
+    },
+    {
+        name: "Crispus Attucks",
+        category: "Employment",
+        description: "",
+        address: "605 S. Duke St., York, PA 17401"
+    }
+];
+
+
+// Esta fue la unica linea que agregue en esta parte 
+// <p>Address: ${r.address}</p> que es para que agregue la direccion
 
 function displayResources(resources) {
     const resourceList = document.getElementById('resourceList');
@@ -51,6 +139,7 @@ function displayResources(resources) {
                 <div class="group">
                 <h3>${i + 1}. ${r.name}</h3>
                 <p>Category: ${r.category}</p>
+                <p>Address: ${r.address}</p>
                 <p>${r.description}</p>
             </div>
         `;
