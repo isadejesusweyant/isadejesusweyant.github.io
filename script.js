@@ -35,91 +35,91 @@ const resources = [
     {
         name: "Emanuel Church of God",
         category: "Food",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "825 E. Princess St., York, PA 17403"
     },
     {
         name: "Salvation Army",
         category: "Food",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "50 E. King St., York, PA 17401"
     },
     {
         name: "Family First Health",
         category: "Health",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "116 S. George St., York, PA 17401"
     },
     {
         name: "WellSpan Health",
         category: "Health",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "1001 S. George St., York, PA 17403"
     },
     {
         name: "York Hospital Community Health Center",
         category: "Health",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "605 S. George St., York, PA 17403"
     },
     {
         name: "PA 211",
         category: "Education",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "Statewide service - Available 24/7"
     },
     {
         name: "Lincoln Intermediate Unit No. 12 (LIU 12)",
         category: "Education",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "300 E. 7th Ave., York, PA 17404"
     },
     {
         name: "York County Literacy Council",
         category: "Education",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "800 E. King St., York, PA 17403"
     },
     {
         name: "York Habitat for Humanity",
         category: "Housing",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "33 S. Steward St., York, PA 17404"
     },
     {
         name: "YWCA York (Emergency Shelter)",
         category: "Housing",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "320 E. Market St., York, PA 17403"
     },
     {
         name: "Bell Bridge Housing Program",
         category: "Housing",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "852 E. Market St., York, PA 17403"
     },
     {
         name: "TrueNorth Wellness Services",
         category: "Mental Health",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "1195 Roosevelt Ave., York, PA 17404"
     },
     {
         name: "Crisis Intervention - York Hospital",
         category: "Mental Health",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "1001 S. George St., York, PA 17403"
     },
     {
         name: "PA Career Link",
         category: "Employment",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "841 Vogelsong Rd., York, PA 17404"
     },
     {
         name: "Crispus Attucks",
         category: "Employment",
-        description: "",
+        description: "Falta mi Descripcion",
         address: "605 S. Duke St., York, PA 17401"
     }
 ];
