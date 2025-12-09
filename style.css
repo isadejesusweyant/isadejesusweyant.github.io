@@ -6,6 +6,9 @@ body {
     background-image: linear-gradient(to bottom right, #090A1A, #344E89, #a0c4ff);
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    font-family: 'Cairo Play', sans-serif;
+    color: white;
 }
 
 h2 {
@@ -17,7 +20,7 @@ p {
 }
 
 .navbar {
-    background-color: rgba(141, 144, 227, 0.3); 
+    background-color: rgba(141, 144, 227, 0.25); 
     
     display: flex;
     justify-content: space-between;
@@ -28,7 +31,7 @@ p {
     margin: 35px 70px;
 
     border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(39, 48, 177, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
 }
 
 .websiteName {
@@ -52,7 +55,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #5c6dcc;
+    background-color: rgba(12, 19, 220, 0.2);
     border-radius: 20px;
 } 
 
@@ -71,3 +74,28 @@ ul li a:hover {
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .resource-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar {
+        margin: 10px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h2 {
+        margin: 20px 10px;
+    }
+
+    p {
+        margin: 20px 10px;
+    }
+
+    ul {
+        justify-content: center;
+        width: 100%;
+    }
+}
