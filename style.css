@@ -60,41 +60,40 @@ ul li a:hover {
     border-radius: 20px;
 } 
 
+#resourceList {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
 .resource-card {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    
-    margin: 10px;
-
-    padding: 10px;
-    border-radius: 8px;
-
-    display: grid;
-    width: 33%;
-    vertical-align: top;
-    box-sizing: border-box;
+    flex: 0 0 300px;
+    min-height: 180px;
+    background-color: rgba(141, 144, 227, 0.25);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.4);
 }
 
 @media (max-width: 768px) {
     .resource-card {
-        width: 100%;
-        margin: 10px 0;
+        flex: 0 0 280px;
     }
-
     .navbar {
         margin: 15px;
         flex-direction: column;
         padding: 10px;
     }
-
     h2 {
         margin: 20px 10px;
     }
-
     p {
         margin: 20px 10px;
     }
-
     ul {
         justify-content: center;
         width: 100%;
