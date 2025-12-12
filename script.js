@@ -147,11 +147,9 @@ function displayResources(resources) {
 }
 displayResources(resources);
 
-// Este es el filtro 
-
-// Obtiene los recursos
+// Obtiene el array donde estan todos los recursos
 let allResources = resources;
-//Recursos filtrados
+// Este es el array con los recursos filtrados 
 let filteredResources = resources;
 
 function filterResources() {
@@ -163,16 +161,17 @@ function filterResources() {
     for (let i = 0; i < allResources.length; i++) {
         let r = allResources[i];
 
-        // checar categoría
+        // categoría
         if (selectedCategory !== 'All' && r.category !== selectedCategory) {
-            continue;
+            continue; // salta si no coincide
         }
 
-        // checar texto
-        if (r.name.toLowerCase().includes(searchText) ||
+        // búsqueda
+        if (searchText === "" || 
+            r.name.toLowerCase().includes(searchText) ||
             r.description.toLowerCase().includes(searchText) ||
             r.address.toLowerCase().includes(searchText)) {
-            filteredResources.push(r);
+            filteredResources.push(r); // agrega
         }
     }
 
@@ -186,3 +185,4 @@ document.getElementById('categorySelect').addEventListener('change', filterResou
 
 // inicio
 displayResources(resources);
+
