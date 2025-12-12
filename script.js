@@ -146,3 +146,43 @@ function displayResources(resources) {
     }
 }
 displayResources(resources);
+
+// Este es el filtro 
+
+// Obtiene los recursos
+let allResources = resources;
+//Recursos filtrados
+let filteredResources = resources;
+
+function filterResources() {
+    let searchText = document.getElementById('searchInput').value.toLowerCase();
+    let selectedCategory = document.getElementById('categorySelect').value;
+
+    filteredResources = [];
+
+    for (let i = 0; i < allResources.length; i++) {
+        let r = allResources[i];
+
+        // checar categoría
+        if (selectedCategory !== 'All' && r.category !== selectedCategory) {
+            continue;
+        }
+
+        // checar texto
+        if (r.name.toLowerCase().includes(searchText) ||
+            r.description.toLowerCase().includes(searchText) ||
+            r.address.toLowerCase().includes(searchText)) {
+            filteredResources.push(r);
+        }
+    }
+
+    // mostrar
+    displayResources(filteredResources);
+}
+
+// eventos
+document.getElementById('searchInput').addEventListener('input', filterResources);
+document.getElementById('categorySelect').addEventListener('change', filterResources);
+
+// inicio
+displayResources(resources);
