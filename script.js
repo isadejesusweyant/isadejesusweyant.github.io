@@ -163,7 +163,8 @@ function filterResources() {
 
         // categoría
         if (selectedCategory !== 'All' && r.category !== selectedCategory) {
-            continue; // salta si no coincide
+            // salta si no coincide
+            continue;
         }
 
         // búsqueda
