@@ -60,6 +60,7 @@ ul li a:hover {
     border-radius: 20px;
 } 
 
+
 #resourceList {
     display: flex;
     overflow-x: auto;
