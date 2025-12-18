@@ -3,31 +3,31 @@ const resources = [
     {
         name: "York County Food Bank",
         category: "Food",
-        description: "Central hub fighting hunger in York County, PA, by collecting and distributing food to over 125 partner agencies and running its own public drive-thru distributions, mobile pantry, and senior programs",
-        address: "254 W. Princess St., York, PA 17401"
+        description: "Central hub fighting hunger in York County, PA, by collecting and distributing food to over 125 partner agencies and running its own public drive-thru distributions, mobile pantry, and senior programs.",
+        address: "254 W. Princess St., York, PA 17401",
     },
     {
         name: "Catholic Harvest Pantry",
         category: "Food",
-        description: "Large, volunteer-run non-profit providing emergency food and hygiene supplies (like soap, diapers) to York County residents",
+        description: "Large, volunteer-run non-profit providing emergency food and hygiene supplies (like soap, diapers) to York County residents.",
         address: "628 E. Market St., York, PA 17403"
     },
     {
         name: "Healthy Community Network",
         category: "Health",
-        description: "Collaborative effort by healthcare providers, social services, and community groups to improve local well-being by addressing social determinants of health like food, housing, and access to care, especially for vulnerable populations, connecting people with resources, and coordinating efforts to build healthier environments",
+        description: "Collaborative effort by healthcare providers, social services, and community groups to improve local well-being by addressing social determinants of health like food, housing, and access to care, especially for vulnerable populations.",
         address: "116 S. George St., York, PA 17401"
     },
     {
         name: "Access York, Inc.",
         category: "Health",
-        description: "A program of YWCA York that provides free, confidential support for victims of domestic violence, sexual assault, and human trafficking in York County, PA, offering a 24-hour hotline",
+        description: "A program of YWCA York that provides free, confidential support for victims of domestic violence, sexual assault, and human trafficking in York County, PA, offering a 24-hour hotline.",
         address: "P.O. Box 30, York, PA 17405"
     },
     {
         name: "York County Council of Churches",
         category: "Food",
-        description: "supports food assistance through the York County Food Bank, offering free, healthy food via drive-thru pantries, mobile distributions, and partners (pantries, kitchens) for those in need, focusing on basic rights and nutritious meals",
+        description: "Supports food assistance through the York County Food Bank, offering free, healthy food via drive-thru pantries, mobile distributions, and partners (pantries, kitchens) for those in need, focusing on basic rights and nutritious meals.",
         address: "595 W. Market St., York, PA 17401"
     },
 
@@ -35,91 +35,91 @@ const resources = [
     {
         name: "Emanuel Church of God",
         category: "Food",
-        description: "Falta mi Descripcion",
+        description: "Offers a vital community food pantry, providing free, nutritious groceries like fresh produce, meat, and shelf-stable items to families in need, alleviating stress and demonstrating love in action through dedicated volunteers.",
         address: "825 E. Princess St., York, PA 17403"
     },
     {
         name: "Salvation Army",
         category: "Food",
-        description: "Falta mi Descripcion",
+        description: "A global Christian church and charity, founded in London in 1865, known for its military-style structure and mission to preach the gospel while meeting human needs without discrimination, offering services like disaster relief, food pantries, shelters, addiction recovery, and holiday assistance.",
         address: "50 E. King St., York, PA 17401"
     },
     {
         name: "Family First Health",
         category: "Health",
-        description: "Falta mi Descripcion",
+        description: "A non-profit, federally qualified health center in Pennsylvania, providing accessible, team-based, patient-centered care focusing on wellness, prevention, and integrated medical, dental, behavioral health, and substance use services for underserved communities.",
         address: "116 S. George St., York, PA 17401"
     },
     {
         name: "WellSpan Health",
         category: "Health",
-        description: "Falta mi Descripcion",
+        description: "A large, integrated non-profit health system serving Central Pennsylvania and Northern Maryland, known for providing comprehensive care through its hospitals, physician groups, behavioral health services, and home health across many locations.",
         address: "1001 S. George St., York, PA 17403"
     },
     {
         name: "York Hospital Community Health Center",
         category: "Health",
-        description: "Falta mi Descripcion",
+        description: "Part of WellSpan Health, provides comprehensive, patient-centered primary care for families, including pediatrics, women's health, and adult medicine.",
         address: "605 S. George St., York, PA 17403"
     },
     {
         name: "PA 211",
         category: "Education",
-        description: "Falta mi Descripcion",
+        description: "Pennsylvania's free, 24/7 information and referral service connecting residents to essential health and human services, including education resources like Head Start, childcare, after-school programs, school supplies, digital literacy training, and adult education.",
         address: "Statewide service - Available 24/7"
     },
     {
         name: "Lincoln Intermediate Unit No. 12 (LIU 12)",
         category: "Education",
-        description: "Falta mi Descripcion",
+        description: "Provides essential educational support, services, and innovative solutions for K-12 public/nonpublic schools, families, and communities in Adams, Franklin, and York Counties, Pennsylvania.",
         address: "300 E. 7th Ave., York, PA 17404"
     },
     {
         name: "York County Literacy Council",
         category: "Education",
-        description: "Falta mi Descripcion",
+        description: "Provides free adult education in York County, PA, focusing on English literacy, math, computer skills, and GED prep through classes and tutoring for English speakers and ESL learners.",
         address: "800 E. King St., York, PA 17403"
     },
     {
         name: "York Habitat for Humanity",
         category: "Housing",
-        description: "Falta mi Descripcion",
+        description: "A Christian housing ministry, volunteer-driven non-profit building safe, affordable homes in York County, PA, for low-income families.",
         address: "33 S. Steward St., York, PA 17404"
     },
     {
         name: "YWCA York (Emergency Shelter)",
         category: "Housing",
-        description: "Falta mi Descripcion",
+        description: "Offers a free, confidential, and safe haven for victims and survivors of domestic violence, sexual assault, and human trafficking, providing immediate refuge for individuals and their children fleeing danger.",
         address: "320 E. Market St., York, PA 17403"
     },
     {
         name: "Bell Bridge Housing Program",
         category: "Housing",
-        description: "Falta mi Descripcion",
+        description: "Run by Bell Socialization Services in York, PA, offers rehabilitative, transitional housing for up to one year for homeless individuals/families, helping them build skills for independent living through support.",
         address: "852 E. Market St., York, PA 17403"
     },
     {
         name: "TrueNorth Wellness Services",
         category: "Mental Health",
-        description: "Falta mi Descripcion",
+        description: "A non-profit, trauma-informed organization in Central PA offering comprehensive behavioral health, mental health, and autism services, including counseling, crisis support, residential care, substance abuse treatment, and prevention programs for all ages.",
         address: "1195 Roosevelt Ave., York, PA 17404"
     },
     {
         name: "Crisis Intervention - York Hospital",
         category: "Mental Health",
-        description: "Falta mi Descripcion",
+        description: "Provides rapid assessment and stabilization for mental health and substance use crises, primarily through the Emergency Department, focusing on immediate needs, risk assessment, and connecting patients to appropriate inpatient, partial programs, or community resources.",
         address: "1001 S. George St., York, PA 17403"
     },
     {
         name: "PA Career Link",
         category: "Employment",
-        description: "Falta mi Descripcion",
+        description: "Pennsylvania's free, statewide one-stop-shop connecting job seekers and employers, offering online tools (like job boards, resume builders) and in-person assistance for career counseling, training funds, interview prep, and finding skilled workers.",
         address: "841 Vogelsong Rd., York, PA 17404"
     },
     {
-        name: "Crispus Attucks",
+        name: "Crispus Attucks York",
         category: "Employment",
-        description: "Falta mi Descripcion",
+        description: "A long-standing non-profit in York, PA, providing holistic support through housing, education, job training, and senior programs, named after the African American patriot, Crispus Attucks.",
         address: "605 S. Duke St., York, PA 17401"
     }
 ];
