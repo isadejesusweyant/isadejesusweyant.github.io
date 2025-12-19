@@ -143,6 +143,33 @@ ul li a:hover {
     text-align: center;
 }
 
+.history-section {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+    margin: 50px 40px
+}
+
+.text-block, .image-block {
+    flex: 1;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(38, 51, 230, 0.6);
+}
+
+.text-block p {
+    margin: 0 0 20px 0;
+}
+
+.history-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 768px) {
 
     #resourceList {
@@ -174,5 +201,19 @@ ul li a:hover {
     ul {
         justify-content: center;
         width: 100%;
+    }
+
+    .history-section {
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+
+    .history-section:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .image-block {
+        width: 100%;
+        margin-top: 20px;
     }
 }
