@@ -170,41 +170,99 @@ ul li a:hover {
     flex-direction: row-reverse;
 }
 
+section:has(#searchInput) {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#searchInput, #categorySelect {
+    background: rgba(141, 144, 227, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput::placeholder {
+    color: white;
+}
+
+#searchInput:focus, #categorySelect:focus {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
+    background: rgba(12, 19, 220, 0.2);
+}
+
+#categorySelect option {
+    background-color: #1a1a2e;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .resource-card {
         flex: 0 0 280px;
     }
     
     .navbar {
-        margin: 15px;
+        margin: 10px;
         flex-direction: column;
-        padding: 10px;
+        padding: 15px 10px;
+        gap: 10px;
     }
     
-    h2 {
-        margin: 20px 10px;
-    }
-    
-    p {
-        margin: 20px 10px;
-    }
-    
-    ul {
+    .navbar ul {
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 5px;
+    }
+
+    .navbar ul li a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .history-section, .history-section:nth-child(even) {
+        flex-direction: column;
+        margin: 20px 15px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .text-block, .image-block {
         width: 100%;
     }
 
-    .history-section {
-        flex-direction: column;
-        margin: 30px 20px;
+    #resourceList {
+        padding: 20px 10px;
+        gap: 20px;
     }
 
-    .history-section:nth-child(even) {
-        flex-direction: column;
+    .resource-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
     }
 
-    .image-block {
-        width: 100%;
-        margin-top: 20px;
+    .suggestion-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        margin: 20px 15px;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin: 15px;
+        line-height: 1.6;
     }
 }
