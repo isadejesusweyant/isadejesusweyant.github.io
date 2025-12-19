@@ -161,22 +161,22 @@ function filterResources() {
     for (let i = 0; i < allResources.length; i++) {
         let r = allResources[i];
 
-        // categoría
+        // verifica que la categoría coincida
         if (selectedCategory !== 'All' && r.category !== selectedCategory) {
-            // salta si no coincide
+            // lo salta si no coincide
             continue;
         }
 
-        // búsqueda
-        if (searchText === "" || 
+        // verifica la búsqueda
+        if (searchText === "" ||
             r.name.toLowerCase().includes(searchText) ||
             r.description.toLowerCase().includes(searchText) ||
             r.address.toLowerCase().includes(searchText)) {
-            filteredResources.push(r); // agrega
+            filteredResources.push(r); // agrega el recurso al array
         }
     }
 
-    // mostrar
+    // muestra los recursos filtrados
     displayResources(filteredResources);
 }
 
@@ -184,6 +184,30 @@ function filterResources() {
 document.getElementById('searchInput').addEventListener('input', filterResources);
 document.getElementById('categorySelect').addEventListener('change', filterResources);
 
-// inicio
+// muestra los recursos
 displayResources(resources);
 
+// Código para la página de sugerencias
+const submitButton = document.getElementById('submitButton');
+const userNameInput = document.getElementById('userName');
+const suggestionText = document.getElementById('suggestionText');
+const message = document.getElementById('message');
+
+if (submitButton) {  // Solo corre si estamos en la página de sugerencias
+    submitButton.addEventListener('click', function () {
+        const name = userNameInput.value;
+        const text = suggestionText.value;
+
+        if (name === '' || text === '') {
+            message.textContent = 'Please write your name and suggestion!';
+            message.style.color = 'red';
+        } else {
+            message.textContent = 'Thank you, ' + name + '! Your suggestion was sent.';
+            message.style.color = 'lightgreen';
+
+            // Limpia los campos
+            userNameInput.value = '';
+            suggestionText.value = '';
+        }
+    });
+}

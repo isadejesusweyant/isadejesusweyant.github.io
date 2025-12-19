@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     min-height: 100vh;
-    
+
     background-image: linear-gradient(to bottom right, #090A1A, #344E89, #a0c4ff);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,8 +21,8 @@ p {
 }
 
 .navbar {
-    background-color: rgba(141, 144, 227, 0.25); 
-    
+    background-color: rgba(141, 144, 227, 0.25);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +66,7 @@ ul li a {
 ul li a:hover {
     background-color: rgba(12, 19, 220, 0.2);
     border-radius: 20px;
-} 
+}
 
 
 #resourceList {
@@ -82,28 +82,85 @@ ul li a:hover {
     min-height: 180px;
     background-color: rgba(141, 144, 227, 0.25);
     color: white;
-    
+
     border-radius: 12px;
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.4);
 }
 
+.suggestion-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(141, 144, 227, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.4);
+    text-align: center;
+}
+
+.suggestion-container h2 {
+    margin-top: 0;
+}
+
+.suggestion-container p {
+    margin: 15px 0 5px 0;
+    text-align: left;
+}
+
+.suggestion-container input,
+.suggestion-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Cairo Play', sans-serif;
+    font-size: 16px;
+}
+
+.suggestion-container button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.suggestion-container button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#message {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    min-height: 40px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .resource-card {
         flex: 0 0 280px;
     }
+
     .navbar {
         margin: 15px;
         flex-direction: column;
         padding: 10px;
     }
+
     h2 {
         margin: 20px 10px;
     }
+
     p {
         margin: 20px 10px;
     }
+
     ul {
         justify-content: center;
         width: 100%;
