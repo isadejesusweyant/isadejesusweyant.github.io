@@ -183,8 +183,11 @@ section:has(#searchInput) {
     box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
     border-radius: 25px;
     color: white;
+    
     padding: 10px 20px;
     font-size: 16px;
+    font-family: 'Cairo Play', sans-serif;
+    
     outline: none;
     transition: all 0.3s ease;
 }
@@ -200,7 +203,7 @@ section:has(#searchInput) {
 }
 
 #categorySelect option {
-    background-color: #1a1a2e;
+    background-color: #202082;
     color: white;
 }
 
