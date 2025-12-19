@@ -130,7 +130,7 @@ const resources = [
 
 function displayResources(resources) {
     const resourceList = document.getElementById('resourceList');
-    resourceList.innerHTML = ''; // Clear existing content
+    resourceList.innerHTML = ''; // limpia el contenido existente
 
     for (let i = 0; i < resources.length; i++) {
         const r = resources[i];
@@ -193,7 +193,7 @@ const userNameInput = document.getElementById('userName');
 const suggestionText = document.getElementById('suggestionText');
 const message = document.getElementById('message');
 
-if (submitButton) {  // Solo corre si estamos en la página de sugerencias
+if (submitButton) {  // solo corre si estamos en la página de sugerencias
     submitButton.addEventListener('click', function () {
         const name = userNameInput.value;
         const text = suggestionText.value;
@@ -205,9 +205,10 @@ if (submitButton) {  // Solo corre si estamos en la página de sugerencias
             message.textContent = 'Thank you, ' + name + '! Your suggestion was sent.';
             message.style.color = 'lightgreen';
 
-            // Limpia los campos
+            // limpia los campos de texto
             userNameInput.value = '';
             suggestionText.value = '';
         }
     });
 }
+
