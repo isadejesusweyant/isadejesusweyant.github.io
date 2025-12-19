@@ -207,6 +207,21 @@ section:has(#searchInput) {
     color: white;
 }
 
+.resources-links {
+    margin: 20px;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.resources-links:hover {
+    background-color: rgba(12, 19, 220, 0.2);
+    border-radius: 20px;
+    
+}
+
 @media (max-width: 768px) {
     .resource-card {
         flex: 0 0 280px;
@@ -267,5 +282,18 @@ section:has(#searchInput) {
     p {
         margin: 15px;
         line-height: 1.6;
+    }
+
+    #searchInput, #categorySelect {
+        width: 100%;
+        max-width: none;
+        font-size: 14px; 
+    }
+
+    section:has(#searchInput) {
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        gap: 15px;
     }
 }

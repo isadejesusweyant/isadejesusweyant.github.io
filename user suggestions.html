@@ -39,14 +39,14 @@
     <div class="suggestion-container">
         <h2>Share Your Suggestion</h2>
         <p>Help us make this site better! Tell us your ideas.</p>
-
+        <div class="success"></div>
         <p>Your Name:</p>
         <input type="text" id="userName" placeholder="Write your name here">
 
         <p>Your Suggestion:</p>
         <textarea id="suggestionText" rows="8" placeholder="Write your idea here..."></textarea>
 
-        <button type="button" id="submitButton">Submit</button>
+        <button type="button" id="submitButton" onclick="window.location.reload();">Submit</button>
 
         <div id="message"></div>
     </div>
