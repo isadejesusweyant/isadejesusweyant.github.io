@@ -155,13 +155,18 @@ function displayResources(resources) {
     for (let i = 0; i < resources.length; i++) {
         const r = resources[i];
         resourceList.innerHTML += `
-            <div class="resource-card" onclick="location.href='${r.link}';" style="cursor: pointer;">
-                <div class="group">
-                <h3>${i + 1}. ${r.name}</h3>
-                <p>Category: ${r.category}</p>
-                <p>${r.description}</p>
-                <p>Address: ${r.address}</p>
-            </div>
+            <div class="card" onclick="location.href='${r.link}';" style="cursor: pointer;">
+                <div class="head">${i + 1}. ${r.name}</div>
+                <div class="content">
+                    <p><strong>Category:</strong>
+                    <p>${r.category}</p>
+                    <br />
+                    <p>${r.description}</p>
+                    <br />
+                    <p><strong>Address:</strong></p>
+                    <p>${r.address}</p>
+                </div>
+            </div>    
         `;
     }
 }
@@ -205,7 +210,7 @@ document.getElementById('searchInput').addEventListener('input', filterResources
 document.getElementById('categorySelect').addEventListener('change', filterResources);
 
 // muestra los recursos
-displayResources(resources);
+displayResources(resources)
 
 // Código para la página de sugerencias
 const submitButton = document.getElementById('submitButton');
@@ -232,3 +237,16 @@ if (submitButton) {  // solo corre si estamos en la página de sugerencias
     });
 }
 
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new
+IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+}, observerOptions);

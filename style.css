@@ -3,7 +3,7 @@ body {
     margin: 0;
     min-height: 100vh;
 
-    background-image: linear-gradient(to bottom right, #090A1A, #344E89, #a0c4ff);
+    background-image: linear-gradient(to bottom right, #090A1A, #663489, #c685f5);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -21,22 +21,34 @@ p {
 }
 
 .navbar {
-    background-color: rgba(141, 144, 227, 0.25);
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    z-index: 20;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
 
-    padding: 0px 20px;
-    border-radius: 20px;
-    margin: 35px 70px;
+.hero-section {
+    background: transparent;
+    position: relative;
+    height: 300px;
+}
 
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
+.wave-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 5;
 }
 
 .websiteName {
-    color: white;
+    color: rgb(3, 0, 0);
     cursor: pointer;
 }
 
@@ -57,13 +69,13 @@ ul {
 
 ul li a {
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 14px 16px;
     text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: rgba(12, 19, 220, 0.2);
+    background-color: rgba(112, 62, 199, 0.668);
     border-radius: 20px;
 }
 
@@ -77,27 +89,14 @@ ul li a:hover {
     max-width: 1400px;
 }
 
-.resource-card {
-    flex: 1 1 300px;
-    max-width: 400px;
-    min-height: 220px;
-    background-color: rgba(141, 144, 227, 0.25);
-    color: white;
-    border-radius: 12px;
-    padding: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.4);
-    text-align: left;
-}
-
 .suggestion-container {
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
-    background-color: rgba(141, 144, 227, 0.25);
+    background-color: rgba(89, 91, 142, 0.25);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.4);
+    border: 3px solid black;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.623);
     text-align: center;
 }
 
@@ -124,7 +123,7 @@ ul li a:hover {
 .suggestion-container button {
     padding: 12px 30px;
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.084);
     color: white;
     border: none;
     border-radius: 8px;
@@ -132,7 +131,7 @@ ul li a:hover {
 }
 
 .suggestion-container button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(81, 33, 168, 0.3);
 }
 
 #message {
@@ -159,7 +158,7 @@ ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(38, 51, 230, 0.6);
+    box-shadow: 0 4px 8px rgba(93, 29, 183, 0.377);
 }
 
 .text-block p {
@@ -178,9 +177,9 @@ section:has(#searchInput) {
 }
 
 #searchInput, #categorySelect {
-    background: rgba(141, 144, 227, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
+    background: rgba(155, 43, 203, 0.286);
+    border: 3px solid #000000;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.623);
     border-radius: 25px;
     color: white;
     
@@ -197,13 +196,13 @@ section:has(#searchInput) {
 }
 
 #searchInput:focus, #categorySelect:focus {
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(38, 51, 230, 0.6);
+    border: 3px solid #000000;
+    box-shadow: 0 8px 32px 0 rgba(120, 68, 218, 0.858);
     background: rgba(12, 19, 220, 0.2);
 }
 
 #categorySelect option {
-    background-color: #202082;
+    background-color: #7842dadd;
     color: white;
 }
 
@@ -220,6 +219,60 @@ section:has(#searchInput) {
     background-color: rgba(12, 19, 220, 0.2);
     border-radius: 20px;
     
+}
+
+.card {
+  font-family: Montserrat, sans-serif;
+  width: 300px;
+  min-height: 400px;
+  height: 100%;
+  translate: -6px -6px;
+  background: #7842dadd;
+  border: 3px solid #000000;
+  box-shadow: 12px 12px 0 #000000;
+  overflow: visible;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  background: #ffffff;
+  padding: 5px 12px;
+  color: #000000;
+  border-bottom: 3px solid #000000;
+}
+
+.content {
+  font-family: Montserrat, sans-serif;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content p {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.card:hover {
+  transform: translate(-4px,-4px);
+  box-shadow: 16px 16px 0 #000000;
+  background-color: #8a5adfff;
+}
+
+.card:active {
+    transform: translate(8px, 8px);
+    box-shadow: 4px 4px 0 #000000;
 }
 
 @media (max-width: 768px) {
